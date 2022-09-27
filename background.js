@@ -4,7 +4,7 @@ function getRandomNumber(number) {
 }
 chrome.runtime.onMessage.addListener((msg, sender, response) => {
     if (msg.name == "fetchWords") {
-        const apiKey = 'OUR-API-KEY';
+        const apiKey = 'olx4xpybjvil6hgubb373brfbgdw9xsay2wbrcyqcolyy5hqh';
         const dateStr = new Date().toISOString().slice(0, 10);
         const apiCall = 'https://api.wordnik.com/v4/words.json/wordOfTheDay?date=' + dateStr + '&api_key=' + apiKey;
 
